@@ -1,0 +1,11 @@
+services:
+  website:
+    image: nginx:alpine
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate --url http://website:80
+    depends_on:
+      - website

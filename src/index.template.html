@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fahrschule Steinbach in Saalburg-Ebersdorf – Führerscheinausbildung, BKF-Weiterbildung, Staplerlehrgänge und mehr.">
+  <title>Fahrschule Steinbach | Sicher ans Ziel</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  {{ component:header }}
+
+  <main id="main">
+    {{ component:hero }}
+    {{ component:quick-info }}
+    {{ component:about }}
+    {{ component:license-classes }}
+    {{ component:news }}
+    {{ component:learning }}
+    {{ component:schedule }}
+    {{ component:team }}
+    {{ component:services }}
+    {{ component:extras }}
+    {{ component:contact }}
+  </main>
+
+  {{ component:footer }}
+  {{ schedule:fallback }}
+  <script defer src="js/navigation.js"></script>
+  <script defer src="js/license-filter.js"></script>
+  <script defer src="js/schedule.js"></script>
+  <script defer src="js/app.js"></script>
+</body>
+</html>

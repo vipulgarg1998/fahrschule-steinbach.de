@@ -1,0 +1,354 @@
+@media (max-width: 900px) {
+  .main-nav {
+    position: absolute;
+    top: 76px;
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 20px;
+    background: var(--white);
+    box-shadow: 0 20px 30px rgba(10, 28, 53, 0.12);
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero-inner {
+    align-items: flex-start;
+    padding-top: 90px;
+  }
+
+  .next-course {
+    right: 20px;
+    left: 20px;
+    width: auto;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid article {
+    padding: 18px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .intro-grid,
+  .learning-grid,
+  .dates-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .class-card {
+    grid-column: span 3 !important;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .learning-visual,
+  .learning-photos {
+    order: 2;
+  }
+
+  .dates-intro {
+    max-width: 600px;
+  }
+
+  .contact-copy {
+    max-width: 650px;
+  }
+
+  .school-gallery {
+    height: 440px;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rich-services article {
+    grid-template-columns: 1fr;
+  }
+
+  .service-photo {
+    height: 260px;
+    min-height: 0;
+  }
+
+  .extras-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .extras-grid > div {
+    grid-column: 1 / -1;
+  }
+
+  .finance-strip > .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .finance-strip img {
+    max-width: 100%;
+  }
+
+  .driverscam-strip {
+    grid-template-columns: 150px 1fr;
+  }
+
+  .driverscam-image-link {
+    grid-column: 1 / -1;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-bottom: 58px;
+  }
+
+  .container {
+    width: min(100% - 28px, 1160px);
+  }
+
+  .topbar-inner {
+    justify-content: center;
+  }
+
+  .topbar-inner span {
+    display: none;
+  }
+
+  .site-header {
+    height: 68px;
+  }
+
+  .main-nav {
+    top: 68px;
+  }
+
+  .hero {
+    min-height: 700px;
+  }
+
+  .hero-image {
+    object-position: 64% center;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(6, 19, 37, 0.91), rgba(6, 19, 37, 0.62)),
+      linear-gradient(0deg, rgba(6, 19, 37, 0.65), transparent);
+  }
+
+  .hero-inner {
+    padding-top: 70px;
+  }
+
+  .hero h1 {
+    font-size: 49px;
+  }
+
+  .hero-lead {
+    font-size: 16px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .next-course {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .calendar-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .section {
+    padding: 74px 0;
+  }
+
+  .intro-grid {
+    gap: 28px;
+  }
+
+  .school-gallery {
+    grid-template-rows: 240px 180px 180px;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .school-gallery .school-main {
+    grid-row: auto;
+  }
+
+  .class-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .class-card {
+    grid-column: 1 / -1 !important;
+  }
+
+  .class-tabs {
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
+    overflow-x: auto;
+  }
+
+  .class-tab {
+    white-space: nowrap;
+  }
+
+  .news-grid article,
+  .news-grid article:first-child {
+    grid-template-columns: 1fr;
+  }
+
+  .news-grid article > img {
+    height: 220px;
+    object-fit: contain;
+    background: #e7ebf0;
+  }
+
+  .learning-grid {
+    gap: 20px;
+  }
+
+  .learning-visual {
+    height: 400px;
+  }
+
+  .learning-photos {
+    height: 450px;
+  }
+
+  .learning-photo-main {
+    width: 240px;
+    height: 240px;
+  }
+
+  .learning-photo-side,
+  .learning-photo-small {
+    width: 170px;
+    height: 170px;
+  }
+
+  .driverscam-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .driverscam-strip img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: var(--white);
+  }
+
+  .driverscam-image-link {
+    grid-column: auto;
+  }
+
+  .schedule-row {
+    grid-template-columns: 58px 1fr;
+  }
+
+  .schedule-row em {
+    display: none;
+  }
+
+  .more-dates {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid,
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-photo {
+    height: 210px;
+  }
+
+  .extras-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .extras-grid > div {
+    grid-column: auto;
+  }
+
+  .extras-grid figure {
+    height: 300px;
+  }
+
+  .finance-strip strong {
+    font-size: 17px;
+  }
+
+  .contact-section {
+    padding: 74px 0;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    margin-top: 5px;
+  }
+
+  .mobile-call {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    color: var(--navy);
+    font-weight: 900;
+    background: var(--yellow);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,164 @@
+.topbar {
+  color: #dce7f5;
+  font-size: 12px;
+  background: var(--navy);
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 34px;
+}
+
+.topbar a {
+  color: var(--white);
+  font-weight: 800;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 76px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 3px 20px rgba(10, 28, 53, 0.06);
+  backdrop-filter: blur(14px);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  line-height: 1;
+}
+
+.brand-mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  color: var(--yellow);
+  font-size: 24px;
+  font-weight: 950;
+  background: var(--navy);
+  border-radius: 11px;
+  transform: skew(-5deg);
+  place-items: center;
+}
+/* .brand-mark {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 11px;
+  /* drop background/color/font-weight rules, they don't apply to an <img> */
+} */
+
+.brand strong,
+.brand small {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.brand strong {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.brand small {
+  margin-top: 4px;
+  color: var(--navy);
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.main-nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main-nav a {
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: var(--blue);
+}
+
+.nav-cta {
+  padding: 11px 18px;
+  color: var(--white) !important;
+  background: var(--navy);
+  border-radius: 9px;
+}
+
+.nav-cta:hover {
+  background: var(--blue);
+}
+
+.menu-toggle {
+  display: none;
+  padding: 7px;
+  background: transparent;
+  border: 0;
+}
+
+.menu-toggle span:not(.sr-only) {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  background: var(--navy);
+}
+
+.site-footer {
+  padding: 48px 0 22px;
+  color: #9caabd;
+  background: #061225;
+}
+
+.footer-main,
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-brand strong {
+  color: #9caabd;
+}
+
+.footer-brand small {
+  color: var(--white);
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a:hover,
+.footer-bottom a:hover {
+  color: var(--white);
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  margin-top: 35px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-call {
+  display: none;
+}

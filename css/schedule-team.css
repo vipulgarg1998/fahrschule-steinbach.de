@@ -1,0 +1,164 @@
+.dates-section {
+  background: var(--white);
+}
+
+.dates-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 100px;
+}
+
+.dates-intro > p:not(.eyebrow) {
+  margin: 23px 0 30px;
+  color: var(--muted);
+}
+
+.schedule {
+  border-top: 1px solid var(--line);
+}
+
+.schedule-loading,
+.schedule-empty,
+.schedule-error {
+  padding: 28px 12px;
+  margin: 0;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+}
+
+.schedule-error {
+  color: #9c2b2b;
+  background: #fff4f4;
+}
+
+.schedule-row {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 18px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.schedule-row time {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.schedule-row time strong {
+  color: var(--navy);
+  font-size: 25px;
+}
+
+.schedule-row time span,
+.schedule-row > div > span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.schedule-row > div span,
+.schedule-row > div strong {
+  display: block;
+}
+
+.schedule-row > div strong {
+  font-size: 15px;
+}
+
+.schedule-row em {
+  padding: 5px 8px;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: var(--yellow);
+  border-radius: 5px;
+}
+
+.schedule-row.next {
+  background: #fff9e8;
+}
+
+details summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 12px;
+  font-weight: 850;
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.more-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 12px 16px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.more-dates p {
+  margin: 5px 0;
+}
+
+.past-date {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.team-section {
+  background: var(--cream);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.team-grid article {
+  padding: 28px;
+  text-align: center;
+  background: var(--white);
+  border-radius: var(--radius);
+}
+
+.team-photo {
+  width: 100%;
+  height: 190px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  background: #d9e6f5;
+  border-radius: 13px;
+}
+
+.team-margrit {
+  object-position: center 38%;
+}
+
+.team-lars {
+  object-position: center 35%;
+}
+
+.team-andreas {
+  object-position: center 42%;
+}
+
+.team-grid h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 17px;
+}
+
+.team-grid p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
